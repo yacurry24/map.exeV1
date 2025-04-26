@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 222 47% 11%;
+  --muted: 210 40% 96%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222 47% 11%;
+  --card: 0 0% 100%;
+  --card-foreground: 222 47% 11%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --primary: 222 47% 50%; /* Blue primary color */
+  --primary-foreground: 210 40% 98%;
+  --secondary: 210 40% 96%;
+  --secondary-foreground: 222 47% 11%;
+  --accent: 275 80% 60%; /* Purple accent */
+  --accent-foreground: 210 40% 98%;
+  --accent-purple: 275 80% 60%; /* Additional purple accent */
+  --accent-blue: 222 83% 60%; /* Additional blue accent */
+  --destructive: 0 100% 50%;
+  --destructive-foreground: 210 40% 98%;
+  --ring: 215 20.2% 65.1%;
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: 222 47% 4.9%;
+  --foreground: 213 31% 91%;
+  --muted: 223 47% 11%;
+  --muted-foreground: 215.4 16.3% 56.9%;
+  --popover: 222 47% 5.9%;
+  --popover-foreground: 213 31% 91%;
+  --card: 222 47% 7%;
+  --card-foreground: 213 31% 91%;
+  --border: 223 47% 15%;
+  --input: 223 47% 15%;
+  --primary: 222 47% 50%; /* Blue primary color */
+  --primary-foreground: 222 47% 95%;
+  --secondary: 223 47% 11%;
+  --secondary-foreground: 210 40% 98%;
+  --accent: 275 80% 60%; /* Purple accent */
+  --accent-foreground: 210 40% 98%;
+  --accent-purple: 275 80% 60%; /* Additional purple accent */
+  --accent-blue: 222 83% 60%; /* Additional blue accent */
+  --destructive: 0 63% 31%;
+  --destructive-foreground: 210 40% 98%;
+  --ring: 223 47% 20%;
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
